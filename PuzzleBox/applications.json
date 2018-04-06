@@ -1,0 +1,48 @@
+﻿{
+  "ApplicationConfiguration": {
+    "Applications": [
+      {
+        "Name": "Application 1",
+        "Image": "~/img/Application-icon.png",
+        "Url": "/app1",
+        "Reset": "resetapp1.sh",
+        "Answer": "123"
+      },
+      {
+        "Name": "Application 2",
+        "Image": "~/img/Application-icon.png",
+        "Url": "/app2",
+        "Reset": "resetapp2.sh",
+        "Answer": "456"
+      },
+      {
+        "Name": "Application 3",
+        "Image": "~/img/Application-icon.png",
+        "Url": "/app3",
+        "Reset": "resetapp3.sh",
+        "Answer": "789"
+      },
+      {
+        "Name": "Application 4",
+        "Image": "~/img/Application-icon.png",
+        "Url": "/app4",
+        "Reset": "resetapp4.sh",
+        "Answer": "135"
+      },
+      {
+        "Name": "Application 5",
+        "Image": "~/img/Application-icon.png",
+        "Url": "/app5",
+        "Reset": "resetapp5.sh",
+        "Answer": "246"
+      },
+      {
+        "Name": "Application 6",
+        "Image": "~/img/Application-icon.png",
+        "Url": "/app6",
+        "Reset": "resetapp6.sh",
+        "Answer": "357"
+      }
+    ]
+  }
+}

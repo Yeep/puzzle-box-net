@@ -1,0 +1,67 @@
+﻿body {
+    background-color: black;
+    color: lawngreen;
+    font-family: monospace;
+}
+
+form.answers {
+    display: grid;
+    grid-template-columns: 200px 0.5fr 0.5fr;
+    grid-gap: 16px;
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form.answers label {
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+form.answers label::after {
+    content: ':';
+}
+
+form input {
+    background-color: black;
+    color: lawngreen;
+    font-family: monospace;
+    border: 1px solid lawngreen;
+}
+
+form.answers .answer {
+    grid-column: 2 / 4;
+    width: 100%;
+}
+
+form.answers .open {
+    grid-column: 2 / 3;
+}
+
+form.answers .close {
+    grid-column: 3 / 4;
+}
+
+.applications {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: row;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+.application {
+    width: 300px;
+    text-align: center;
+}
+
+.application .name {
+    width: 100%;
+    font-weight: bold;
+}
+
+.application img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Puzzle Box";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Puzzle Box</h2>
+
+<p>This box contains a number of web applications that are vulnerable to a variety of common security flaws. By exploiting these flaws you will find a unique code from each applicaiton. Once you have all the codes you can unlock the box.</p>
+
+<ul>
+    <li>Please only use software hacks to get in. Don't force the box open.</li>
+    <li>You won't need to exploit any published vulnerabilities in public software.</li>
+    <li>If you mess up, unplug the power and everything should reset to the start.</li>
+</ul>
+
+<div class="applications">
+    @foreach (var app in (IEnumerable<PuzzleBox.Models.SafeApplication>)ViewData["Applications"]) {
+    <div class="application">
+        <div class="name">
+            @app.Name
+        </div>
+        <a href="@app.Url"><img src="@Url.Content(app.Image)"/></a>
+        <form>
+            <input type="submit" value="Reset"/>
+        </form>
+    </div>
+    }
+</div>
+
+<form class="answers">
+    <label for="app1">Application 1</label>
+    <input type="text" name="app1" class="answer"/>
+    <label for="app2">Application 2</label>
+    <input type="text" name="app2" class="answer" />
+    <input type="submit" value="Open" class="open" /><input type="submit" value="Close" class="close" />
+</form>
+
